@@ -43,14 +43,14 @@ const SpecialMenu = () => {
   })
   return (
     <section>
-        <h1 className='text-6xl text-center mb-4 '>Today's Special</h1>
+        <h1 className='text-6xl text-center mb-4 '>{"Today\'s Special"}</h1>
         <div className='grid grid-cols-3'>
             <div className='px-5'>
                  <h1 className='text-4xl text-center mb-4 '>Main Course</h1>
                  <div id='menu-items' className='flex flex-col gap-4'>
                  {Array(9).fill(
                  <div className='grid gap-4 grid-cols-3 align-middle'>
-                    <p>l'exquiste hamburguersa</p>
+                    <p>{"l\'exquiste hamburguersa"}</p>
                     <Separator className='mt-3' orientation='horizontal'/>
                     <p> $20</p>
                  </div>

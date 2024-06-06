@@ -27,8 +27,8 @@ const Navbar = () => {
             />
             <div className='flex max-md:hidden pt-2 flex-row gap-3 '>
                 {
-                    navitems.map((link) => (
-                        <Link className='hover:text-slate-400' href={`/${link}`}>{link}</Link>
+                    navitems.map((link,index) => (
+                        <Link key={index} className='hover:text-slate-400' href={`/${link}`}>{link}</Link>
                     ))
                 }      
             </div>
@@ -41,9 +41,9 @@ const Navbar = () => {
                         <DropdownMenuContent>
                             <DropdownMenuLabel>Regals</DropdownMenuLabel>
                             <DropdownMenuSeparator />
-                            {navitems.map((link) => (
+                            {navitems.map((link,index) => (
                                 <DropdownMenuItem>
-                                    <Link href={'/'}>
+                                    <Link key={index} href={'/'}>
                                         {link}
                                     </Link>
                                 </DropdownMenuItem>
