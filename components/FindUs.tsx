@@ -27,7 +27,7 @@ const FindUs = () => {
       </div>
       <div className='mt-20 flex flex-col items-center gap-4 justify-center'>
         <h1 className='text-3xl text-center font-serif' >Subscribe To Our Newsletter</h1>
-        <p className='text-center text-xl'>We'd love you to see and hear other people stories</p>
+        <p className='text-center text-xl'>{"We\'d love you to see and hear other people stories"}</p>
         <div className="flex w-full max-w-xl items-center space-x-2">
         <Input type="email"  className="border-orange-200" placeholder="Email" />
         <Button type="submit">Subscribe</Button>

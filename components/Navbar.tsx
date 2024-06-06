@@ -42,8 +42,8 @@ const Navbar = () => {
                             <DropdownMenuLabel>Regals</DropdownMenuLabel>
                             <DropdownMenuSeparator />
                             {navitems.map((link,index) => (
-                                <DropdownMenuItem>
-                                    <Link key={index} href={'/'}>
+                                <DropdownMenuItem key={index}>
+                                    <Link  href={'/'}>
                                         {link}
                                     </Link>
                                 </DropdownMenuItem>
