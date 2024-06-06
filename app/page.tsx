@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import Header from "@/components/Header";
 import Intro from "@/components/Intro";
+import Laurels from "@/components/Laurels";
 import Navbar from "@/components/Navbar";
 import SpecialMenu from "@/components/SpecialMenu";
 import Image from "next/image";
@@ -18,6 +19,7 @@ export default function Home() {
       <SpecialMenu/>
       <Chef/>
       <Intro/>
+      <Laurels/>
       <Gallery/>
       <FindUs/>
       <Footer/>

@@ -9,7 +9,7 @@ const Header = () => {
   useGSAP(()=> {
     gsap.fromTo('#header-text',{
       y:200,
-      delay:3,
+      delay:2.8,
       opacity:0
     },{
       y:0,
@@ -23,7 +23,7 @@ const Header = () => {
         <video  className='h-[80vh] w-[100vw] object-fill' autoPlay muted >
             <source src='/food.mp4' />
         </video>
-        <div id='header-text' className='absolute w-[30rem] top-8 pl-16 opacity-0'>
+        <div id='header-text' className='absolute w-[32rem] top-8 pl-16 opacity-0'>
           <Image
             src={'/spoon.png'}
             alt='spoon'
@@ -31,7 +31,7 @@ const Header = () => {
             height={50}
             className='mb-3'
           />
-          <p className='text-7xl font-semibold text-orange-400 mb-3 '>The Key To Fine Dining</p>
+          <p className='text-7xl font-serif font-semibold text-orange-400 mb-3 '>The Key To Fine Dining</p>
           <Link title='cta' href={'/'} className={buttonVariants({ variant: "default" })}>Click here</Link>
         </div>
     </section>

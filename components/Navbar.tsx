@@ -13,6 +13,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
   } from "@/components/ui/dropdown-menu"
+import { buttonVariants } from './ui/button'
   
 const Navbar = () => {
   return (
@@ -32,9 +33,7 @@ const Navbar = () => {
                 }      
             </div>
             <div className='flex flex-row gap-3 max-md:hidden'>
-                <Link className='pt-2' href={'/'}>Log in/Register</Link>
-                <Separator orientation='vertical'/>
-                <Link className='pt-2' href={'/'}>Book table</Link>
+                <Link className={buttonVariants({ variant: "default" })} href={'/'}>Book table</Link>
             </div>
                 <div className="max-sm:block hidden" >
                     <DropdownMenu >

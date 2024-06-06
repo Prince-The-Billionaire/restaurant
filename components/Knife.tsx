@@ -28,7 +28,7 @@ export default function Knife({props}:any) {
   return (
     <group {...props} ref={knifeRef} dispose={null}>
       <group position={[-0.007, 0.005, 0]} rotation={[Math.PI, -1.571, 0]}>
-        <group rotation={[Math.PI / 2, 0, 0]} scale={0.13}>
+        <group rotation={[Math.PI / 2, Math.PI, 0]} scale={0.13}>
           <group rotation={[-Math.PI / 2, 0, 0]} scale={100}>
             <mesh
               castShadow
